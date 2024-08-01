@@ -1,5 +1,25 @@
 body {
   min-width: 850px;
+  box-sizing: border-box;
+  margin: 0;
+  display: flex;
+  flex-direction: column; /* Располагаем элементы по вертикали */
+  align-items: center; /* Центрируем содержимое по горизонтали */
+  justify-content: center; /* Центрируем содержимое по вертикали */
+  height: 100vh; /* Высота body равна высоте окна браузера */
+}
+
+.content {
+  background-color: deepskyblue;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-sizing: border-box;
+  margin-bottom: 20px; /* Отступ снизу, чтобы отделить блок от параграфов */
 }
 
 h1 {
@@ -7,8 +27,7 @@ h1 {
   font-size: 31px;
   font-style: italic;
   text-transform: uppercase;
-  margin-bottom: 0;
-  margin-top: 0;
+  margin: 0;
   padding-top: 45px;
   font-weight: normal;
 }
@@ -17,28 +36,20 @@ h2 {
   font-family: Inter, sans-serif;
   font-size: 31px;
   text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 35px;
+  margin: 0 0 35px 0;
 }
 
 p {
+  margin: 0; /* Отступ сверху и снизу у параграфов */
   font-family: Inter, sans-serif;
-  margin-top: 0;
-  margin-bottom: 0;
-  text-align: center;
+  text-align: center; /* Центрируем текст параграфов по горизонтали */
 }
 
 img {
   width: 210px;
-  margin-bottom: 80px;
+  margin-bottom: 20px;
 }
-div {
-  background-color: deepskyblue;
-  width: 500px;
-  height: 500px;
-  margin: 0 auto 20px;
-  text-align: center;
-}
+
 h3 {
   font-family: "Inter", sans-serif;
   margin: 0;
@@ -46,10 +57,8 @@ h3 {
   text-transform: uppercase;
   line-height: 18px;
   font-weight: normal;
-  text-align: center;
 }
-h1,
-h2,
-h3 {
+
+h1, h2, h3 {
   color: white;
 }
