@@ -72,11 +72,11 @@ h1, h2, h3 {
     height: auto;
     margin: 0;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: center; /* Центрируем содержимое по вертикали */
+    height: 100vh; /* Высота контейнера равна высоте окна браузера */
   }
-
-  
+ 
   .content {
     width: 100%;
     height: auto;
