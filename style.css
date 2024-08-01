@@ -1,9 +1,10 @@
+/* Основные стили для экрана */
 body {
   min-width: 850px;
   box-sizing: border-box;
   margin: 0;
   display: flex;
-  flex-direction: column; /* Располагаем элементы по вертикали */
+  flex-direction: column; /* Вертикальное размещение элементов */
   align-items: center; /* Центрируем содержимое по горизонтали */
   justify-content: center; /* Центрируем содержимое по вертикали */
   height: 100vh; /* Высота body равна высоте окна браузера */
@@ -19,7 +20,7 @@ body {
   justify-content: center;
   text-align: center;
   box-sizing: border-box;
-  margin-bottom: 20px; /* Отступ снизу, чтобы отделить блок от параграфов */
+  margin-bottom: 20px;
 }
 
 h1 {
@@ -40,9 +41,9 @@ h2 {
 }
 
 p {
-  margin: 0; /* Отступ сверху и снизу у параграфов */
+  margin: 20px 0;
   font-family: Inter, sans-serif;
-  text-align: center; /* Центрируем текст параграфов по горизонтали */
+  text-align: center;
 }
 
 img {
@@ -61,4 +62,55 @@ h3 {
 
 h1, h2, h3 {
   color: white;
+}
+
+/* Стили для мобильных устройств */
+@media (max-width: 425px) {
+  body {
+    min-width: auto;
+    padding: 20px;
+    height: auto;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Центрируем содержимое по вертикали */
+  }
+
+  
+  .content {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрируем содержимое по горизонтали */
+    justify-content: center; /* Центрируем содержимое по вертикали */
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 24px;
+    padding-top: 30px;
+  }
+
+  h2 {
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+
+  img {
+    width: 150px;
+    margin-bottom: 10px;
+  }
+
+  h3 {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  p {
+    font-size: 16px;
+    text-align: center;
+    margin: 10px 0;
+  }
 }
